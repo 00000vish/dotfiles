@@ -2,12 +2,12 @@
 
 --Text--
 
-  main-bg:           #rgba(26, 27, 38, 1);
-  main-fg:           #d7dbf5FF;
-  main-br:           #baa2e4FF;
+  main-bg:           #282828FF;
+  main-fg:           #CBCED3FF;
+  main-br:           #EBDBB2FF;
   main-ex:           #85A583FF;
-  select-bg:         #51348aFF;
-  select-fg:         #bb9af7FF;
+  select-bg:         #475437FF;
+  select-fg:         #B5CC97FF;
   separatorcolor:    transparent;
   border-color:      transparent;
 
@@ -18,27 +18,27 @@
 }
 
 .blank-window {
-    background: transparent;
+    background: transparent
 }
 
 .control-center {
-    background: rgba(26, 27, 38, 1);
-    border: 2px solid #bb9af7;
+    background: #282828;
+    border: 2px solid #B5CC97;
     border-radius: 10px;
 }
 
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
-    background: #1a1b26;
+    background: #282828;
 }
 
 .control-center-list {
-    background: #1a1b26;
+    background: #282828;
 }
 
 .control-center-list-placeholder {
-    background: #1a1b26;
+    background: #282828;
 }
 
 .floating-notifications {
@@ -46,7 +46,7 @@
 }
 
 .notification {
-    background: #1a1b26;
+    background: #282828;
     padding: 0;
     margin: 0px;
 }
@@ -58,10 +58,10 @@
 }
 
 .notification-content {
-    background: #1a1b26;
+    background: #282828;
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid #bb9af7;
+    border: 2px solid #B5CC97;
     margin: 0;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .notification-action {
-    border: 2px solid #51348a;
+    border: 2px solid #475437;
     border-top: none;
     border-radius: 5px;
 }
@@ -98,7 +98,7 @@
     font-size: 16px;
     font-weight: 700;
     background: transparent;
-    color: #d7dbf5;
+    color: #CBCED3;
     text-shadow: none;
     margin-right: 18px
 }
@@ -107,7 +107,7 @@
     font-size: 15px;
     font-weight: 400;
     background: transparent;
-    color: #b4befe;
+    color: #CBCED3;
     text-shadow: none
 }
 
@@ -121,13 +121,13 @@
     font-size: 16px;
     font-weight: 700;
     background: transparent;
-    color: #baa2e4;
+    color: #EBDBB2;
     text-shadow: none
 }
 
 .widget-title {
-    color: #b4befe;
-    background: rgb(43, 43, 57);
+    color: #CBCED3;
+    background: #475437;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
     font-size: 1.5rem;
@@ -135,16 +135,16 @@
 }
 
 .widget-dnd {
-    background: rgb(43, 43, 57);
+    background: #475437;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
     font-size: large;
-    color: #b4befe;
+    color: #CBCED3;
 }
 
 .widget-dnd>switch {
-    background: #b4befe;
+    background: #CBCED3;
 }
 
 .widget-dnd>switch:checked {
@@ -153,27 +153,27 @@
 }
 
 .widget-dnd>switch slider {
-    background: rgb(43, 43, 57);
+    background: #475437;
     border-radius: 12px
 }
 
 .widget-dnd>switch:checked slider {
-    background: rgb(43, 43, 57);
+    background: #475437;
     border-radius: 12px
 }
 
 .widget-title>button {
     font-size: 1rem;
-    color: #b4befe;
+    color: #CBCED3;
     text-shadow: none;
-    background: rgb(43, 43, 57);
+    background: #475437;
     box-shadow: none;
     border-radius: 10px;
 }
 
 .widget-title>button:hover {
     background: #f7768e;
-    color: rgb(43, 43, 57);
+    color: #475437;
 }
 
 .widget-label {
@@ -182,26 +182,26 @@
 
 .widget-label>label {
     font-size: 1rem;
-    color: #b4befe;
+    color: #CBCED3;
 }
 
 .widget-mpris {
-    color: #b4befe;
-    background: rgb(43, 43, 57);
+    color: #CBCED3;
+    background: #475437;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
 }
 
 .widget-mpris button {
-    color: #b4befe;
-    background: rgb(43, 43, 57);
+    color: #CBCED3;
+    background: #475437;
     border-radius: 10px;
 }
 
 .widget-mpris button:disabled {
     color: #535353;
-    background: rgb(43, 43, 57);
+    background: #475437;
     border-radius: 10px;
 }
 
@@ -210,21 +210,21 @@
     padding: 5px;
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
-    background: rgb(43, 43, 57);
+    background: #475437;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
     margin: 3px;
-    background: rgba(26, 27, 38, 1);
+    background: #282828;
     border-radius: 10px;
-    color: rgb(180, 190, 254);
+    color: #CBCED3;
 }
 
 .widget-volume {
     padding-left: 20px;
     padding-right: 20px;
-    background: rgb(43, 43, 57);
+    background: #475437;
     border-radius: 10px;
     font-size: x-large;
-    color: rgb(180, 190, 254);
+    color: #CBCED3;
 }
