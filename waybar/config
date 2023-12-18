@@ -1,0 +1,278 @@
+[
+	{
+		"name": "main",
+		"fixed-center": true,
+		"width": 1800,
+		"layer": "top",
+		"position": "top",
+		"output": "DP-1",
+		"modules-left": [
+			"custom/arch",
+			"hyprland/workspaces",
+			"hyprland/window"
+		],
+		"modules-center": [
+			"clock"
+		],
+		"modules-right": [
+			"network",
+			"memory",
+			"cpu",
+			"bluetooth",
+			"pulseaudio",
+			"custom/notifications"
+		],
+		"hyprland/window": {
+			"max-length" :30,
+			"format": "{}",
+			"separate-outputs": true
+		},
+		"custom/arch": {
+			"format": "",
+			"tooltip": false,
+			"on-click": "sh $HOME/.config/rofi/bin/powermenu"
+		},
+		"hyprland/workspaces": {
+			"format": "{icon} {name}",
+			"tooltip": false,
+			"all-outputs": false,
+			"format-icons": {
+				"active": "",
+				"default": "",
+				"urgent": ""
+			}
+		},
+		"clock": {
+			"format": " {:%I:%M %p, %b %d, %Y}",
+			"tooltip-format": "{calendar}",
+			"calendar": {
+				"mode": "year",
+				"mode-mon-col": 5,
+				"on-scroll": 1,
+				"on-click-right": "mode",
+				"format": {
+					"months": "<span color='#7a409c'><b>{}</b></span>",
+					"weeks": "<span color='#9c5fbe'><b>W{}</b></span>",
+					"weekdays": "<span color='#be7fe0'><b>{}</b></span>",
+					"days": "<span color='#ffc2ff'><b>{}</b></span>",
+					"today": "<span color='#ff0000'><b><u>{}</u></b></span>"
+				}
+			}
+		},
+		"pulseaudio": {
+			"format": "{icon} {volume}%",
+			"format-muted": "",
+			"tooltip": false,
+			"on-click": "sh $HOME/.config/rofi/bin/audio",
+			"format-icons": {
+				"headphone": "",
+				"default": [
+					"",
+					"",
+					"󰕾",
+					"󰕾",
+					"󰕾",
+					"",
+					"",
+					""
+				]
+			},
+			"scroll-step": 1
+		},
+		"bluetooth": {
+			"format": " {status}",
+			"format-disabled": "",
+			"format-connected": " {num_connections}",
+			"tooltip-format": "{device_enumerate}",
+			"tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+		},
+		"network": {
+			"interval": 1,
+			"interface": "wlan0",
+			"format": "󰜷 {bandwidthUpBytes} 󰜮 {bandwidthDownBytes}",
+			"format-disconnected": "󰖪  No Network",
+			"tooltip": false
+		},
+		"cpu": {
+			"interval": 1,
+			"format": "{usage}% ",
+			"max-length": 10
+		},
+		"memory": {
+			"interval": 1,
+			"format": "{}% ",
+			"max-length": 10
+		},		
+		"custom/notifications": {
+			"format": " 󰂚 ",
+			"tooltip": false,
+			"on-click": "swaync-client -t"
+		}
+	},
+	{
+		"name": "second",
+		"layer": "top",
+		"position": "bottom",
+		"margin-bottom": 5,
+		"output": "DP-2",
+		"modules-left": [
+			"hyprland/workspaces"
+		],
+		"modules-right": [
+			"temperature#one",
+			"temperature#two",
+			"temperature#three",
+			"temperature#four",
+			"temperature#five",
+			"temperature#six",
+			"temperature#seven",
+			"temperature#eight",
+			"temperature#nine",
+			"temperature#ten",
+			"temperature#eleven",
+			"temperature#twelve",
+			"temperature#thirteen",
+			"temperature#fourteen",
+			"temperature#fifteen",
+			"temperature#sixteen"
+		],
+		"hyprland/workspaces": {
+			"format": "{icon} {name}",
+			"tooltip": false,
+			"all-outputs": false,
+			"format-icons": {
+				"active": "",
+				"default": "",
+				"urgent": ""
+			}
+		},
+		"temperature#one": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#two": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon0/temp2_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#three": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#four": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#five": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#six": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#seven": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#eight": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#nine": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp2_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#ten": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp3_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#eleven": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp4_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#twelve": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp5_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#thirteen": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp6_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#fourteen": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp7_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#fifteen": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp8_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		},
+		"temperature#sixteen": {
+			"interval" : 10,
+			"thermal-zone": 2,
+			"hwmon-path": "/sys/class/hwmon/hwmon5/temp9_input",
+			"critical-threshold": 80,
+			"format-critical": "{temperatureC}°C ",
+			"format": "{temperatureC}°C "
+		}
+	}
+]

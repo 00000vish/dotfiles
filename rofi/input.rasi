@@ -1,0 +1,76 @@
+@theme "/dev/null"
+
+* {
+  main-bg:            #1e1e2e66;
+  main-fg:            #cdd6f4;
+  main-br:            #bb9af7ff;
+  main-ex:            #7aa2f7ff;
+  select-bg:          #585b7066;
+  select-fg:          #7f849c;
+  separatorcolor:     transparent;
+  border-color:       transparent;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 500px;
+  background-color: @main-bg;
+}
+
+element {
+  padding: 8 12;
+  background-color: transparent;
+  text-color: @select-fg;
+}
+
+element selected {
+  text-color: @main-fg;
+  background-color: @main-ex;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 14;
+  padding: 0 10 0 0;
+  background-color: transparent;
+}
+
+entry {
+  padding: 12;
+  background-color: @select-bg;
+  text-color: @main-fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @main-bg;
+}
+
+listview {
+  background-color: @main-bg;
+  columns: 1;
+  lines: 10;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: @main-bg;
+}
+
+prompt {
+  enabled: true;
+  padding: 12 0 0 12;
+  background-color: @select-bg;
+  text-color: @main-fg;
+}
+
+
