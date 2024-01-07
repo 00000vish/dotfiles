@@ -36,7 +36,9 @@ set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
 
 alias vim "nvim"
-alias code "code --disable-gpu-sandbox"
+alias code "nvim"
+
+export PATH="$HOME/.cargo/bin:$PATH"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
