@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ -z "$HYPRLAND_LAYOUT" ]
+then
+  export HYPRLAND_LAYOUT=master
+fi
+
+currentLayout=$HYPRLAND_LAYOUT
+
+echo $currentLayout
+
+if [ "$currentLayout" = "master" ]; then
+  export HYPRLAND_LAYOUT=dwindle
+  hyprctl keyword general:layout dwindle
+else
+  export HYPRLAND_LAYOUT=master
+  hyprctl keyword general:layout master
+fi
+
