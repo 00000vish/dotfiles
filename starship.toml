@@ -1,27 +1,30 @@
-# Inserts a blank line between shell prompts
 add_newline = false
 
+
 format = """
-[░▒▓](#a3aed2)\
-[  ](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+[▒▓](#FFFFFF)\
+[   ](bg:#FFFFFF fg:#000000)\
+[▓▒▓](#FFFFFF)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[▓▒](#FFFFFF)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
+[▓](#FFFFFF)\
 $time\
-[ ](fg:#1d2230)\
+[▓▒](#FFFFFF)\
 \n$character"""
 
+[character]
+success_symbol = "[❯](#FFFFFF)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "bg:#FFFFFF fg:#000000"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -36,8 +39,9 @@ read_only = " 󰌾"
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "bg:#050505"
+format = '[[  $time ](bg:#FFFFFF fg:#000000)]($style)'
+
 
 #Symbols 
 
@@ -70,54 +74,82 @@ symbol = " "
 
 [git_branch]
 symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:#FFFFFF fg:#000000"
+format = '[[▓](#FFFFFF) $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:#FFFFFF fg:#000000"
+format = '[($all_status$ahead_behind )]($style)[▓▒](#FFFFFF)'
 
 [golang]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [guix_shell]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [haskell]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [haxe]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [hg_branch]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [hostname]
 ssh_symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [java]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [julia]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [lua]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [memory_usage]
 symbol = "󰍛 "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [meson]
 symbol = "󰔷 "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nim]
 symbol = "󰆥 "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nix_shell]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nodejs]
-symbol = " "
+symbol = ""
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [os.symbols]
 Alpaquita = " "
@@ -162,22 +194,36 @@ Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [pijul_channel]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [python]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [rlang]
 symbol = "󰟔 "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [ruby]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [rust]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [scala]
 symbol = " "
+style = "bg:#FFFFFF fg:#000000"
+format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 

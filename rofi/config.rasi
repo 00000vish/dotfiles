@@ -26,7 +26,7 @@ window {
     spacing:                     0px;
     padding:                     0px;
     border:                      2px;
-    border-radius:               10px;
+    border-radius:               0px;
     border-color:                @main-br;
     background-color:            transparent;
 }
@@ -71,7 +71,7 @@ listview {
     cursor:                      "default";
     background-color:            @main-bg;
     text-color:                  @main-fg;
-    border-radius:               10px;
+    border-radius:               0px;
 }
 mode-switcher {
     orientation:                 vertical;
@@ -98,7 +98,7 @@ element {
     enabled:                     true;
     spacing:                     30px;
     padding:                     10px;
-    border-radius:               10px;
+    border-radius:               0px;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
@@ -126,14 +126,14 @@ element-text {
     text-color:                  inherit;
 }
 
-
 * {
-    main-bg:            #24283be6;
-    main-fg:            #c0caf5ff;
-    main-br:            #bb9af7ff;
-    main-ex:            #7dcfffcc;
-    select-bg:          #7aa2f7ff;
-    select-fg:          #24283bff;
-    separatorcolor:     transparent;
-    border-color:       transparent;
+    main-bg:            #111111ff;
+    main-fg:            #888888ff;
+    main-br:            #ccccccff;
+    main-ex:            #ffffffff;
+    select-bg:          #666666ff;
+    select-fg:          #ffffffff;
+    separatorcolor:     #444444ff;
+    border-color:       #555555ff;
 }
+

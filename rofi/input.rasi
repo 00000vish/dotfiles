@@ -1,14 +1,14 @@
 @theme "/dev/null"
 
 * {
-  main-bg:            #1e1e2e66;
-  main-fg:            #cdd6f4;
-  main-br:            #bb9af7ff;
-  main-ex:            #7aa2f7ff;
-  select-bg:          #585b7066;
-  select-fg:          #7f849c;
-  separatorcolor:     transparent;
-  border-color:       transparent;
+    main-bg:            #111111ff;
+    main-fg:            #888888ff;
+    main-br:            #ccccccff;
+    main-ex:            #ffffffff;
+    select-bg:          #666666ff;
+    select-fg:          #ffffffff;
+    separatorcolor:     #444444ff;
+    border-color:       #555555ff;
   
   border: 0;
   margin: 0;

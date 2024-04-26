@@ -1,15 +1,15 @@
-/* 
+/*
 
 @define-color bar-bg #000000;
 
 @define-color main-bg #11111b;
-@define-color main-fg #b4befe;
+@define-color main-fg #ffffff;
 
-@define-color wb-act-bg #24283b;
-@define-color wb-act-fg #7aa2f7;
+@define-color wb-act-bg #000000;
+@define-color wb-act-fg #ffffff;
 
-@define-color wb-hvr-bg #7aa2f7;
-@define-color wb-hvr-fg #cfc9c2; 
+@define-color wb-hvr-bg #ffffff;
+@define-color wb-hvr-fg #000000;
 
 */
 
@@ -18,7 +18,7 @@
   font-family: 'JetBrainsMono NF', 'Symbols Nerd Font Mono';
   font-size: 16px;
   min-height: 10px;
-  color: #b4befe;
+  color: #ffffff; /* changed to white */
 }
 
 window#waybar {
@@ -31,10 +31,11 @@ window#waybar {
 
 #workspaces,
 button.visible {
-  color: #7aa2f7;
-  background: #24283b;
+  color: #333333; 
+  background: #777777;
 }
 
+#systemd-failed-units,
 #custom-arch,
 #window,
 #workspaces,
@@ -46,13 +47,13 @@ button.visible {
 #pulseaudio,
 #custom-notifications,
 #bluetooth {
-  background-color: #11111b;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: #222222;  
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 10px;
 }
 
+#systemd-failed-units,
 #custom-arch,
 #window,
 #workspaces,
@@ -69,33 +70,4 @@ button.visible {
   border-bottom-right-radius: 0;
 }
 
-#bluetooth{
-  border-top-left-radius: 10;
-  border-bottom-left-radius: 10;
-}
 
-#custom-notifications{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-#network{
-  border-top-left-radius: 10;
-  border-bottom-left-radius: 10;
-}
-
-#cpu{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-right: 15px;
-}
-
-#custom-arch{
-  border-top-left-radius: 10;
-  border-bottom-left-radius: 10;
-}
-
-#window{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
