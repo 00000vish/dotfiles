@@ -35,6 +35,8 @@ button.visible {
   background: #777777;
 }
 
+#backlight,
+#battery,
 #systemd-failed-units,
 #custom-arch,
 #window,
@@ -53,6 +55,8 @@ button.visible {
   margin-top: 10px;
 }
 
+#backlight,
+#battery,
 #systemd-failed-units,
 #custom-arch,
 #window,

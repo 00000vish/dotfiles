@@ -4,16 +4,30 @@
 		"layer": "top",
 		"position": "top",
 		"output": "DP-1",
-		"modules-right": [
+		"modules-center": [
 			"systemd-failed-units",
 			"clock",
-			"hyprland/workspaces"
+			"hyprland/workspaces",
+		],
+		"modules-right": [
+			"network",
+			"memory",
+			"cpu",
+			"bluetooth",
+			"backlight",
+			"pulseaudio",
+			"battery"
 		],
 		"custom/arch": {
 			"format": "",
 			"tooltip": false,
 			"on-click": "sh $HOME/.config/rofi/bin/powermenu"
 		},
+		"backlight": {
+		        "device": "intel_backlight",
+		        "format": "{percent}% {icon}",
+		        "format-icons": ["", ""]
+                },
 		"hyprland/workspaces": {
 			"format": "{icon} {name}",
 			"tooltip": false,
@@ -48,59 +62,6 @@
                 	"system": true, 
                 	"user": true,
 			"on-click": "sh $HOME/.config/rofi/bin/powermenu"
-		}
-	},
-	{
-		"name": "second",
-		"fixed-center": false,
-		"layer": "top",
-		"position": "top",
-		"output": "DP-2",
-		"modules-left": [
-			"hyprland/workspaces",
-			"network",
-			"bluetooth",
-			"pulseaudio",
-			"memory",
-			"cpu",
- 			"systemd-failed-units"
-		],
-		"hyprland/window": {
-			"max-length" :30,
-			"format": "{}",
-			"separate-outputs": true
-		},
-		"custom/arch": {
-			"format": "",
-			"tooltip": false,
-			"on-click": "sh $HOME/.config/rofi/bin/powermenu"
-		},
-		"hyprland/workspaces": {
-			"format": "{icon} {name}",
-			"tooltip": false,
-			"all-outputs": false,
-			"format-icons": {
-				"active": "",
-				"default": "",
-				"urgent": ""
-			}
-		},
-		"clock": {
-			"format": " {:%I:%M %p, %b %d, %Y}",
-			"tooltip-format": "{calendar}",
-			"calendar": {
-				"mode": "year",
-				"mode-mon-col": 5,
-				"on-scroll": 1,
-				"on-click-right": "mode",
-				"format": {
-					"months": "<span color='#7a409c'><b>{}</b></span>",
-					"weeks": "<span color='#9c5fbe'><b>W{}</b></span>",
-					"weekdays": "<span color='#be7fe0'><b>{}</b></span>",
-					"days": "<span color='#ffc2ff'><b>{}</b></span>",
-					"today": "<span color='#ff0000'><b><u>{}</u></b></span>"
-				}
-			}
 		},
 		"pulseaudio": {
 			"format": "{icon} {volume}%",
@@ -151,27 +112,6 @@
 			"format": " {}%",
 			"max-length": 10
 		},
-	},
-	{
-		"name": "third",
-		"layer": "top",
-		"position": "bottom",
-		"margin-bottom": 5,
-		"output": "HDMI-A-1",
-		"modules-left": [
-			"hyprland/workspaces",
-			"network",
-		],
-		"hyprland/workspaces": {
-			"format": "{icon} {name}",
-			"tooltip": false,
-			"all-outputs": false,
-			"format-icons": {
-				"active": "",
-				"default": "",
-				"urgent": ""
-			}
-		},
 		"network": {
 			"interval": 1,
 			"interface": "wlan0",
@@ -179,5 +119,24 @@
 			"format-disconnected": "󰖪  No Network",
 			"tooltip": false
 		},
+		"battery": {
+		        "interval": 60,
+		        "states": {
+		            "warning": 30,
+		            "critical": 15
+		        },
+		        "format": "{capacity}% {icon}",
+		        "format-icons": ["", "", "", "", ""],
+		        "max-length": 25
+		    }
+	},
+	{
+		"name": "main",
+		"layer": "top",
+		"position": "bottom",
+		"output": "HDMI-A-1",
+		"modules-left": [
+			"hyprland/workspaces",
+		],
 	}
 ]
