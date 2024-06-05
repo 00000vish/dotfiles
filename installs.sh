@@ -29,4 +29,10 @@ sudo pacman -Runs wofi kitty
 echo " "
 
 echo " "
+echo "[::]Setting Up Thingss[::]"
+echo " "
+git clone https://github.com/00000vish/neovim ~/.config/vim
+echo " "
+
+echo " "
 echo "[::] Install Complete [::]"
