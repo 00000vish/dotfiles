@@ -31,7 +31,7 @@ echo " "
 echo " "
 echo "[::]Setting Up Thingss[::]"
 echo " "
-git clone https://github.com/00000vish/neovim ~/.config/vim
+git clone https://github.com/00000vish/neovim ~/.config/nvim
 echo " "
 
 echo " "
