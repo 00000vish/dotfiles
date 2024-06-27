@@ -9,7 +9,18 @@ echo " "
 echo " "
 echo "[::]Installing System[::]"
 echo " "
-sudo pacman -S firefox mpv gimp networkmanager-openvpn pipewire bluez bluez-utils fish timeshift hyprpaper alacritty rofi waybar starship git zip unzip tmux neovim plasma-meta qt6ct
+sudo pacman -S firefox mpv gimp networkmanager-openvpn pipewire bluez bluez-utils fish timeshift hyprpaper alacritty rofi waybar starship git zip unzip tmux neovim qt6ct cliphist wl-clipboard
+echo " "
+
+echo " "
+read -p 'Install KDE Desktop Enviroment?  (yes/skip): ' kdede
+if [ $kdede = "yes" ]
+  then
+    echo " "
+    echo "[::]Installing KDE Desktop Enviroment[::]"
+    echo " "
+    sudo pacman -S plasma-meta kde-applications 
+fi
 echo " "
 
 echo " "
