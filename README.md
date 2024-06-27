@@ -2,7 +2,9 @@
 
 ## Install
 
+```
 git clone https://github.com/00000vish/dotfiles ~/.config/ && sudo ~/.config/installs.sh
+```
 
 ## branch -> `gruvbox`
 
