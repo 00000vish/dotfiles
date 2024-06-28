@@ -9,7 +9,6 @@ configuration {
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
-    icon-theme:                  "Tela-circle-dracula";
 }
 
 @theme "/dev/null"
@@ -17,10 +16,8 @@ configuration {
 
 // Main //
 window {
-    height:                      500px;
-    width:                       600px;
     transparency:                "real";
-    fullscreen:                  false;
+    fullscreen:                  true;
     enabled:                     true;
     cursor:                      "default";
     spacing:                     0px;
@@ -51,7 +48,7 @@ inputbar {
 listbox {
     padding:                     5px;
     spacing:                     5px;
-    orientation:                 horizontal;
+    orientation:                 vertical;
     children:                    [ "mode-switcher" , "listview" ];
     background-color:            transparent;
 }
@@ -73,20 +70,23 @@ listview {
     text-color:                  @main-fg;
     border-radius:               0px;
 }
+
 mode-switcher {
-    orientation:                 vertical;
-    width:                       100px;
+    orientation:                 horizontal;
     enabled:                     true;
-    padding:                     60px 10px 60px 10px;
+    padding:                     10px 10px 10px 10px;
     spacing:                     15px;
     background-color:            transparent;
 }
+
 button {
     cursor:                      pointer;
-    border-radius:               50px;
+    border-radius:               10px;
     background-color:            @main-bg;
     text-color:                  @main-fg;
+    padding:                     10px;
 }
+
 button selected {
     background-color:            @main-fg;
     text-color:                  @main-bg;

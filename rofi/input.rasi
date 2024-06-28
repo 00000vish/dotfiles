@@ -19,6 +19,7 @@
 window {
   width: 500px;
   background-color: @main-bg;
+  fullscreen: true;
 }
 
 element {

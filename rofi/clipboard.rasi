@@ -13,7 +13,7 @@ window {
     height:                      55%;
     width:                       20%;
     transparency:                "real";
-    fullscreen:                  false;
+    fullscreen:                  true;
     enabled:                     true;
     cursor:                      "default";
     spacing:                     0px;
