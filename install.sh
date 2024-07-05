@@ -9,7 +9,7 @@ echo " "
 echo " "
 echo "[::]Installing System[::]"
 echo " "
-sudo pacman -S firefox mpv gimp networkmanager-openvpn pipewire bluez bluez-utils fish timeshift hyprpaper alacritty rofi waybar starship git zip unzip tmux neovim qt6ct cliphist wl-clipboard
+sudo pacman -S firefox mpv gimp networkmanager-openvpn pipewire bluez bluez-utils fish timeshift hyprpaper alacritty rofi waybar starship git zip unzip tmux neovim qt6ct cliphist wl-clipboard polkit-kde-agent
 echo " "
 
 echo " "
