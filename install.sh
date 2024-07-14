@@ -9,7 +9,11 @@ echo " "
 echo " "
 echo "[::]Installing System[::]"
 echo " "
-sudo pacman -S firefox mpv gimp networkmanager-openvpn pipewire bluez bluez-utils fish timeshift hyprpaper alacritty rofi waybar starship git zip unzip tmux neovim qt6ct cliphist wl-clipboard polkit-kde-agent
+sudo pacman -S firefox mpv gimp networkmanager-openvpn \
+     pipewire bluez bluez-utils fish timeshift hyprpaper \
+     alacritty rofi waybar starship git zip unzip \
+     tmux neovim qt6ct cliphist wl-clipboard polkit-kde-agent \
+     noto-fonts-cjk noto-fonts-emoji noto-fonts
 echo " "
 
 echo " "
@@ -40,9 +44,10 @@ sudo pacman -Runs wofi kitty
 echo " "
 
 echo " "
-echo "[::]Setting Up Thingss[::]"
+echo "[::]Setting Up Things[::]"
 echo " "
 git clone https://github.com/00000vish/neovim ~/.config/nvim
+git config --global core.editor nvim
 echo " "
 
 echo " "
