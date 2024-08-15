@@ -1,5 +1,8 @@
 # .dotfiles
 
+> [!IMPORTANT]  
+> Please checkout the branches and the code before installing!
+
 ## Install
 
 ```
