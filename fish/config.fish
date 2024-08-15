@@ -27,12 +27,6 @@ set -g fish_pager_color_prefix '#777777'
 set -g fish_pager_color_completion '#666666'
 set -g fish_pager_color_description '#555555'
 
-
-alias vim "nvim"
-alias code "nvim"
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
