@@ -1,50 +1,5 @@
 add_newline = false
 
-
-format = """
-[▒▓](#FFFFFF)\
-[   ](bg:#FFFFFF fg:#000000)\
-[▓▒▓](#FFFFFF)\
-$directory\
-[▓▒](#FFFFFF)\
-$git_branch\
-$git_status\
-$nodejs\
-$rust\
-$golang\
-$php\
-[▓](#FFFFFF)\
-$time\
-[▓▒](#FFFFFF)\
-\n$character"""
-
-[character]
-success_symbol = "[❯](#FFFFFF)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
-
-[directory]
-style = "bg:#FFFFFF fg:#000000"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
-read_only = " 󰌾"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#050505"
-format = '[[  $time ](bg:#FFFFFF fg:#000000)]($style)'
-
-
-#Symbols 
-
 [aws]
 symbol = "  "
 
@@ -57,103 +12,85 @@ symbol = " "
 [conda]
 symbol = " "
 
+[crystal]
+symbol = " "
+
 [dart]
 symbol = " "
+
+[directory]
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
 
 [elixir]
-symbol = " "
+symbol = " "
 
 [elm]
 symbol = " "
+
+[fennel]
+symbol = " "
 
 [fossil_branch]
 symbol = " "
 
 [git_branch]
-symbol = ""
-style = "bg:#FFFFFF fg:#000000"
-format = '[[▓](#FFFFFF) $symbol $branch ]($style)'
-
-[git_status]
-style = "bg:#FFFFFF fg:#000000"
-format = '[($all_status$ahead_behind )]($style)[▓▒](#FFFFFF)'
+symbol = " "
 
 [golang]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [guix_shell]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [haskell]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [haxe]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [hg_branch]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [hostname]
 ssh_symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [java]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [julia]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
+
+[kotlin]
+symbol = " "
 
 [lua]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [memory_usage]
 symbol = "󰍛 "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [meson]
 symbol = "󰔷 "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nim]
 symbol = "󰆥 "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nix_shell]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [nodejs]
-symbol = ""
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
+symbol = " "
+
+[ocaml]
+symbol = " "
 
 [os.symbols]
 Alpaquita = " "
 Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
 Arch = " "
@@ -169,6 +106,7 @@ Garuda = "󰛓 "
 Gentoo = " "
 HardenedBSD = "󰞌 "
 Illumos = "󰈸 "
+Kali = " "
 Linux = " "
 Mabox = " "
 Macos = " "
@@ -185,45 +123,44 @@ Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
+RockyLinux = " "
 Redox = "󰀘 "
 Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
+Void = " "
 Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
 
 [pijul_channel]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [python]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [rlang]
 symbol = "󰟔 "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [ruby]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
 [rust]
-symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
+symbol = "󱘗 "
 
 [scala]
 symbol = " "
-style = "bg:#FFFFFF fg:#000000"
-format = '[ $symbol ]($style)[▓▒](#FFFFFF)'
 
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
