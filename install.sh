@@ -20,7 +20,7 @@ echo " "
 echo " "
 echo "[::]Installing QEMU[::]"
 echo " "
-sudo pacman -S qemu-full libvirt dnsmasq swtpm virt-manager 
+sudo pacman -S qemu-full libvirt dnsmasq swtpm virt-manager virt-viewer
 echo " "
 
 sudo usermod -a -G libvirt $USER
@@ -31,6 +31,7 @@ echo " "
 echo "[::]Setting Up Things[::]"
 echo " "
 git config --global core.editor vim
+git config --global init.defaultBranch main
 echo " "
 
 echo " "
