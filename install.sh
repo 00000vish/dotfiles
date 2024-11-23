@@ -11,7 +11,7 @@ echo "[::]Installing System[::]"
 echo " "
 sudo pacman -S firefox git \
      networkmanager-openvpn \
-     tmux fish starship  \
+     tmux fish starship alacritty \
      zip unzip less \
      docker docker-compose docker-buildx \
      obs-studio qt6-wayland gimp \
