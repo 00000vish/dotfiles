@@ -13,6 +13,7 @@ sudo pacman -S firefox git \
      networkmanager-openvpn \
      tmux fish starship  \
      zip unzip less \
+     docker docker-compose docker-buildx \
      obs-studio qt6-wayland gimp \
      noto-fonts-cjk noto-fonts-emoji noto-fonts
 echo " "
