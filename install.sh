@@ -12,7 +12,7 @@ echo " "
 sudo pacman -S firefox git \
      networkmanager-openvpn \
      tmux fish starship alacritty \
-     zip unzip less \
+     zip unzip less neovim ripgrep lazygit \
      docker docker-compose docker-buildx \
      obs-studio qt6-wayland gimp \
      noto-fonts-cjk noto-fonts-emoji noto-fonts \
