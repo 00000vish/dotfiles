@@ -15,7 +15,8 @@ sudo pacman -S firefox git \
      zip unzip less \
      docker docker-compose docker-buildx \
      obs-studio qt6-wayland gimp \
-     noto-fonts-cjk noto-fonts-emoji noto-fonts
+     noto-fonts-cjk noto-fonts-emoji noto-fonts \
+     gnome-themes-standard
 echo " "
 
 echo " "
