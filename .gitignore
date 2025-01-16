@@ -1,5 +1,3 @@
-README.md
-
 .bash_history
 .bash_logout
 .bash_profile
@@ -10,6 +8,7 @@ README.md
 .cert
 .docker
 .npm
+.ssh
 
 .pki
 .mozilla
@@ -29,28 +28,19 @@ Public
 Storage
 Templates
 Videos
-VirtualMachines
+Machines
 
 .local/state/*
 .local/share/*
 !.local/share/backgrounds
 !.local/share/fonts
 
-.config/.gsd-keyboard.settings-ported
-.config/Code - OSS
-.config/GIMP
-.config/connections.db
-.config/dconf/user
-.config/evolution
-.config/gtk-3.0
-.config/gtk-4.0
-.config/htop
-.config/mimeapps.list
-.config/monitors.xml
-.config/nvim
-.config/pulse
-.config/systemd
-.config/user-dirs.dirs
-.config/user-dirs.locale
-.config/virt-viewer
-.config/fish/fish_variables
+.config/*
+!.config/alacritty
+!.config/tmux
+!.config/.install.sh
+!.config/starship.toml
+!.config/fish
+.config/fish
+!.config/fish/config.fish
+!.config/.gnome.dconf
