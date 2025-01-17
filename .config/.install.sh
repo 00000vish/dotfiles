@@ -16,7 +16,7 @@ sudo pacman -S firefox git \
      docker docker-compose docker-buildx \
      obs-studio qt6-wayland gimp \
      noto-fonts-cjk noto-fonts-emoji noto-fonts \
-     gnome-themes-standard
+     gnome-themes-standard nautilus-python
 echo " "
 
 echo " "
