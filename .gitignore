@@ -10,6 +10,7 @@
 .npm
 .ssh
 
+.nv
 .pki
 .mozilla
 .viminfo

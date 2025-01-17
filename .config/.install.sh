@@ -34,6 +34,8 @@ echo "[::]Setting Up Things[::]"
 echo " "
 git config --global core.editor vim
 git config --global init.defaultBranch main
+git config --global credential.helper store
+dconf load / < ./.gnome.dconf
 echo " "
 
 echo " "
