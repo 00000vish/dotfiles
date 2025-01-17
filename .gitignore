@@ -35,6 +35,9 @@ Machines
 .local/share/*
 !.local/share/backgrounds
 !.local/share/fonts
+!.local/share/nautilus-python
+!.local/share/nautilus-python/extensions
+.local/share/nautilus-python/extensions/__pycache__
 
 .config/*
 !.config/alacritty
