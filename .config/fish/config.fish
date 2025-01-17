@@ -37,7 +37,7 @@ bind \[3\;5~ kill-word
 # ctrl-backspace
 bind \cH backward-kill-word
 
-alias ls 'ls -ls --color=auto'
+alias lsd 'lsd -al --color=auto'
 alias grep 'grep --color=auto'
 
 starship init fish | source

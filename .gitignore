@@ -44,7 +44,8 @@ Machines
 !.config/tmux
 !.config/.install.sh
 !.config/starship.toml
-!.config/fish
 .config/fish
+!.config/fish
 !.config/fish/config.fish
+.config/fish/fish_variables
 !.config/.gnome.dconf
