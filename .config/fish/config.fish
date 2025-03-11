@@ -31,9 +31,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# ctrl-del
-bind \[3\;5~ kill-word
-
 # ctrl-backspace
 bind \cH backward-kill-word
 
